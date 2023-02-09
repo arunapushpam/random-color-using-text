@@ -33,13 +33,13 @@
 <body>
   <h1>Random color</h1>
   <div class="col">
-    <p id="color"></p>
+    <p id="random"></p>
     <button onclick="changeColor()">Click Button</button>
   </div>
   <script>
     function changeColor() {
       let color = '#';
-      let digit = '0123456789ABCDE';
+      let digit = '0123456789ABCDEF';
       for (let i = 0; i < 6; i++) {
 
         let ran = Math.floor(Math.random() * 16);
@@ -47,7 +47,7 @@
         color += digit[ran];
       }
       
-      document.getElementById('color').innerHTML = color;
+      <!-- document.getElementById('random').innerHTML = color;	 -->
       document.body.style.backgroundColor = color;
     }
 	
